@@ -50,6 +50,7 @@ footer{
     display: flex;
     flex-direction: column;
     min-height: 400px;
+    box-shadow: black 0px 4px 6px -1px;
 }
 .post img{
     width: 100%;
@@ -81,6 +82,39 @@ footer{
     padding-right: 15px;
 }
 
+.datec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.datec a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+.datec a:hover{
+    color: darkblue;
+}
+
+.datec button{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.datec button:hover{
+    background-color: darkred;
+}
+
 .new{
     display: flex;
     justify-content: space-between;
@@ -91,17 +125,25 @@ footer{
     font-size: 40px;
 }
 
-.new a{
+.newa{
+    display: flex;
     text-decoration: none;
     background-color: green;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    align-items: center;
+    border-radius: 20px;
     cursor: pointer;
+    box-shadow: black 0px 4px 6px -1px;
 }
 
-.new a:hover{
-    background-color: darkgreen;
+.new a{
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.newa:hover{
+    box-shadow: black 0px 6px 8px -2px;
 }
 
 .create form{

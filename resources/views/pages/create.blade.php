@@ -2,15 +2,19 @@
     <div class="wrapper">
         <div class="create">
             <h3>New post</h3>
-            <form action="#" method="POST">
+            <form action="{{route('post.store')}}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="title">URL-picture:</label>
-                    <input type="text" id="title" name="title" required>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="content">Description:</label>
-                    <textarea id="content" name="content" rows="5" required></textarea>
+                    <label for="url">URL-picture:</label>
+                    <input type="text" id="url" name="url" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
                 </div>
                 <div class="group">
                 <input type="submit" value="Create Post">
