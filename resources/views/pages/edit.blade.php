@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <div class="wrapper">
+    <div class="max-w-[90%] mx-auto">
         <div class="create">
             <h3>Update post</h3>
             <form action="{{route('post.update', $posts->id)}}" method="POST">
